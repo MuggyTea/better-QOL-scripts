@@ -102,8 +102,13 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+.DS_Store
+.vscode/
 
 # データ
 tweet_generation/tweet_datas/*
 tweet_generation/TextGenerator/*
 .idea/*
+youtube2mp4/*
+youtube2wav/*
+tweet_generation/*
