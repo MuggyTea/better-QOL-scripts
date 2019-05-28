@@ -105,6 +105,7 @@ venv.bak/
 .DS_Store
 .vscode/
 .history/
+.idea
 
 # data
 python/tweet_generation
