@@ -1,0 +1,23 @@
+(*
+選択した文字列の文字数をカウントするスクリプト
+count to selected text without space & enter on Apple Script
+*)
+
+on run {input}
+    try
+        set str to item 1 of input
+        set msg to "改行と空白を除外：" & length of new_str(str, "\\s")
+        tell me to activate
+        using terms from application "Finder"
+            set btn1 to "OK"
+            set ttl1 to "文字数カウンター"
+            display dialog msg buttons {btn1} default button {btn1} with title ttl1 with icon 1 giving up after 3
+        end using terms from
+    end try
+end run
+--
+on new_str(str, opt)
+    set sh1 to "printf '%s' " & quoted form of str & " | "
+    set sh2 to "perl -CIO -pe 's|" & opt & "||g;'"
+    do shell script sh1 & sh2
+end new_str
