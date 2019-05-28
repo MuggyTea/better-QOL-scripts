@@ -106,5 +106,7 @@ venv.bak/
 .vscode/
 .history/
 
-# データ
-python/tweet_generation/*
+# data
+python/tweet_generation
+python/youtube2mp4
+python/youtube2wav
