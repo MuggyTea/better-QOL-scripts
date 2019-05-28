@@ -107,9 +107,4 @@ venv.bak/
 .history/
 
 # データ
-tweet_generation/tweet_datas/*
-tweet_generation/TextGenerator/*
-.idea/*
-youtube2mp4/*
-youtube2wav/*
-tweet_generation/*
+python/tweet_generation/*
