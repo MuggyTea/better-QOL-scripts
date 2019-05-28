@@ -1,0 +1,12 @@
+(*
+選択した文字列をコピーして、ユーザー辞書を開くスクリプト
+open Replacement Dictionary with selected text to the clipboard on Apple Script
+ *)
+tell application "System Events"
+	keystroke "c" using command down
+end tell
+set theText to the clipboard
+tell application "System Preferences"
+	reveal anchor "Text" of pane id "com.apple.preference.keyboard"
+	activate
+end tell

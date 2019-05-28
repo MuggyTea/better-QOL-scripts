@@ -104,6 +104,7 @@ venv.bak/
 .mypy_cache/
 .DS_Store
 .vscode/
+.history/
 
 # データ
 tweet_generation/tweet_datas/*
